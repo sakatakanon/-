@@ -14,9 +14,10 @@ import lombok.Data;
 @Table(name = "houses")
 @Data
 public class House {
+	  
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "Id")
+	@Column(name = "id")
 	private Integer id;
 	
 	@Column(name = "name")
@@ -32,10 +33,10 @@ public class House {
 	private Integer price;
 	
 	@Column(name = "capacity")
-	private Integer capasity;
+	private Integer capacity;
 	
 	@Column(name = "postal_code")
-	private String postlcode;
+	private String postalCode;
 	
 	@Column(name = "address")
 	private String address;
