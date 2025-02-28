@@ -25,7 +25,7 @@ public class VerificationToken {
 	@JoinColumn(name = "user_id")
 	private User user;
 
-	@Column(name = "taken")
+	@Column(name = "token")
 	private String token;
 
 	@Column(name = "created_at", insertable = false, updatable = false)
